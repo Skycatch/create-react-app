@@ -309,6 +309,9 @@ module.exports = function(webpackEnv) {
       ],
     },
     module: {
+      // https://github.com/AnalyticalGraphicsInc/cesium-webpack-example/issues/6#issuecomment-357705453
+      unknownContextCritical: false,
+      unknownContextRegExp: /^.\/.*$/,
       strictExportPresence: true,
       rules: [
         // Disable require.ensure as it's not a standard language feature.
