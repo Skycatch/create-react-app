@@ -294,7 +294,9 @@ module.exports = function(webpackEnv) {
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
         // Cesium module name
-        cesium: path.resolve(cesiumSource, 'Cesium.js'),
+        // TO USE original cesium package switch the linnes below
+        // cesium: path.resolve(cesiumSource, 'Cesium.js'),
+        '@skycatch/cesium': path.resolve(cesiumSource, 'Cesium.js'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
