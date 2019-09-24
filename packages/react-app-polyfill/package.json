@@ -1,6 +1,6 @@
 {
   "name": "react-app-polyfill",
-  "version": "1.0.1",
+  "version": "1.0.1-cesium-fork",
   "description": "Polyfills for various browsers including commonly used language features",
   "repository": {
     "type": "git",
