@@ -99,7 +99,9 @@ const resolveOwn = relativePath => path.resolve(__dirname, '..', relativePath);
 // config before eject: we're in ./node_modules/react-scripts/config/
 module.exports = {
   dotenv: resolveApp('.env'),
-  cesium: resolveApp('node_modules/cesium'),
+  // TO USE original cesium package switch the lines below
+  // cesium: resolveApp('node_modules/cesium'),
+  cesium: resolveApp('node_modules/@skycatch/cesium'),
   appPath: resolveApp('.'),
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
