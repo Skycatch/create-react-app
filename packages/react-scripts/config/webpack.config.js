@@ -328,7 +328,7 @@ module.exports = function(webpackEnv) {
         }),
         ...(modules.webpackAliases || {}),
         // Cesium module name
-        // TO USE original cesium package switch the linnes below
+        // TO USE original cesium package switch the lines below
         // cesium: path.resolve(cesiumSource, 'Cesium.js'),
         '@skycatch/cesium': path.resolve(cesiumSource, 'Cesium.js'),
       },
